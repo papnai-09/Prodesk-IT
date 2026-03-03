@@ -7,7 +7,6 @@ hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 });
 
-// Theme Toggle
 themeToggle.addEventListener("click", () => {
     body.classList.toggle("dark");
 
@@ -16,4 +15,5 @@ themeToggle.addEventListener("click", () => {
     } else {
         themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
     }
+
 });
