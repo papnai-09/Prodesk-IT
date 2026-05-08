@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(
+    135deg,
+    #667eea,
+    #764ba2
+  );
+
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 450px;
+
+  background: white;
+
+  padding: 35px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+  animation: fadeIn 0.4s ease;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+
+  padding: 14px;
+
+  margin-top: 12px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 10px;
+
+  font-size: 15px;
+
+  transition: 0.3s;
+}
+
+input:focus {
+  outline: none;
+
+  border-color: #667eea;
+
+  box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+}
+
+.error {
+  color: red;
+
+  font-size: 13px;
+
+  margin-top: 5px;
+
+  margin-left: 3px;
+}
+
+.buttons {
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 10px;
+
+  margin-top: 30px;
+}
+
+button {
+  flex: 1;
+
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #667eea;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #5a67d8;
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.password-box {
+  position: relative;
+}
+
+.password-box input {
+  padding-right: 45px;
+}
+
+.password-box span {
+  position: absolute;
+
+  right: 15px;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  cursor: pointer;
+
+  color: #666;
+}
+
+.review-box {
+  background: #f7f7f7;
+
+  padding: 20px;
+
+  border-radius: 12px;
+
+  margin-top: 20px;
+}
+
+.review-box p {
+  margin-bottom: 12px;
+
+  color: #333;
+
+  font-size: 15px;
+}
+
+.success-box {
+  text-align: center;
+}
+
+.success-box h1 {
+  color: #22c55e;
+}
+
+.progress-container {
+  margin-bottom: 30px;
+}
+
+.progress-text {
+  margin-bottom: 10px;
+
+  font-weight: bold;
+
+  color: #555;
+}
+
+.progress-bar {
+  width: 100%;
+
+  height: 10px;
+
+  background: #ddd;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    #667eea,
+    #764ba2
+  );
+
+  transition: 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
